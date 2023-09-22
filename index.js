@@ -12,7 +12,6 @@ const animalB = {
   age: 240,
   weight: 400,
   species: "turtle",
-  extinctionYear: 360,
   id: 2,
 };
 
@@ -21,3 +20,10 @@ const getAnimalSpecies = (animal) => {
 };
 
 console.log(getAnimalSpecies(animalA));
+
+//Una que reciba un animal y devuelva true o false dependiendo de si el animal está extinto o no.
+
+const isAnimalAlive = (animal) => {
+  return Object.hasOwn(animal, "extinctionYear");
+};
+console.log(isAnimalAlive(animalB));
