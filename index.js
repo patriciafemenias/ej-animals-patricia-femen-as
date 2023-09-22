@@ -15,3 +15,9 @@ const animalB = {
   extinctionYear: 360,
   id: 2,
 };
+
+const getAnimalSpecies = (animal) => {
+  return animal.species;
+};
+
+console.log(getAnimalSpecies(animalA));
